@@ -1,4 +1,6 @@
-import { validateURL, MalformedURLError, DNSResolveError, BlacklistedIPError } from './index';
+import {
+  validateURL, MalformedURLError, DNSResolveError, BlacklistedIPError,
+} from './index';
 
 describe('validateURL', () => {
   it('should allow a legit URL', async () => {

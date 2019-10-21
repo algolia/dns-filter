@@ -1,75 +1,11 @@
 import { lookup } from 'dns';
 import { URL } from 'url';
 import { promisify } from 'util';
+import { BlacklistedIPError, DNSResolveError, MalformedURLError } from './errors';
 
 const dnsLookupPromisified = promisify(lookup);
 
-export class CustomError extends Error {
-  constructor(message?: string) {
-    super(message);
-    this.name = this.constructor.name;
-    Error.captureStackTrace(this, this.constructor);
-  }
-}
-
-// Generic error to not expose the attempted hack detection
-export class NetworkError extends CustomError {
-  constructor() {
-    super('network_error');
-  }
-}
-
-export class MalformedURLError extends CustomError {
-  url: string;
-
-  constructor(url: string) {
-    super(`Malformed URL error: url could not be parsed`);
-    this.url = url;
-  }
-}
-
-/**
- * @param originalError - {Error} - Original error thrown by `dns.resolve`.
- * @param p - {Object} - Compound parameters.
- * @param p.fakeGenericError - {boolean} - Used to prevent leaking to
- *   the user we've detected a possible hack attempt.
- */
-export class DNSResolveError extends CustomError {
-  originalError: Error;
-
-  constructor(originalError: Error) {
-    super(`[FETCH][DNS] Resolving error: ${originalError.message}`);
-    this.originalError = originalError;
-  }
-}
-
-/**
- * @param url - {string} - URL provided to be resolved.
- * @param ip - {string} - Blacklisted IP.
- * @param p - {Object} - Compound parameters.
- * @param p.fakeGenericError - {boolean} - Used to prevent leaking to
- *   the user we've detected a possible hack attempt.
- */
-export class BlacklistedIPError<T extends Record<string, any>> extends CustomError {
-  url: string;
-  restrictedIP: string;
-  [name: string]: any;
-
-  constructor(url: string, restrictedIP: string, context?: T) {
-    super(`[FETCH][DNS] URL resolved to blacklisted IP`);
-    this.url = url;
-    this.restrictedIP = restrictedIP;
-    if (context) {
-      Object.keys(context).forEach((key) => {
-        this[key] = context[key];
-      })
-    }
-  }
-}
-
-const createBlacklistedIPError = <T extends Record<string, any>>(url: string, restrictedIP: string, context?: T): BlacklistedIPError<T> & T => {
-  return new BlacklistedIPError(url, restrictedIP, context) as BlacklistedIPError<T> & T;
-}
+const createBlacklistedIPError = <T extends Record<string, any>>(url: string, restrictedIP: string, context?: T): BlacklistedIPError<T> & T => new BlacklistedIPError(url, restrictedIP, context) as BlacklistedIPError<T> & T;
 
 interface ValidationParams<T extends Record<string, any>> {
   url: string;
@@ -85,7 +21,7 @@ export async function validateURL<T extends Record<string, any>>({ url, ipPrefix
     throw new MalformedURLError(url);
   }
 
-  const hostname = parsedURL.hostname;
+  const { hostname } = parsedURL;
 
   let ip: string;
   try {
@@ -145,3 +81,5 @@ function isRestrictedIP(ip: string, ipPrefixes: string[] = PRIVATE_IP_PREFIXES) 
   const matchesPrefix = (prefix: string) => sanitizedIP.startsWith(prefix);
   return ipPrefixes.some(matchesPrefix);
 }
+
+export { BlacklistedIPError, DNSResolveError, MalformedURLError };

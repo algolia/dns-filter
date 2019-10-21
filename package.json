@@ -17,6 +17,7 @@
     "build": "yarn clean && tsc",
     "clean": "rm -rf dist/",
     "test": "jest",
+    "lint": "eslint src/**/*",
     "semantic-release": "semantic-release"
   },
   "devDependencies": {
@@ -24,8 +25,13 @@
     "@semantic-release/git": "^7.0.16",
     "@types/jest": "^24.0.19",
     "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "^2.4.0",
+    "@typescript-eslint/parser": "^2.4.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.19.0",
     "jest": "^24.9.0",
-    "prettier": "^1.18.2",
     "semantic-release": "^15.13.27",
     "ts-jest": "^24.1.0",
     "typescript": "^3.6.4"
