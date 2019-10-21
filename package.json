@@ -1,0 +1,33 @@
+{
+  "name": "@algolia/dns-filter",
+  "version": "0.0.1",
+  "description": "A small utility library to test whether requests try to access predefined IPs",
+  "main": "dist/index.js",
+  "author": "Algolia <contact@algolia.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/algolia/dns-filter/issues"
+  },
+  "homepage": "https://github.com/algolia/dns-filter#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/algolia/dns-filter.git"
+  },
+  "scripts": {
+    "build": "yarn clean && tsc",
+    "clean": "rm -rf dist/",
+    "test": "jest",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^3.0.4",
+    "@semantic-release/git": "^7.0.16",
+    "@types/jest": "^24.0.19",
+    "@types/node": "^12.11.1",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "semantic-release": "^15.13.27",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.4"
+  }
+}
