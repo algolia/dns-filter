@@ -46,7 +46,6 @@ export async function validateURL<T extends Record<string, any>>({ url, ipPrefix
 // https://en.wikipedia.org/wiki/Private_network
 export const PRIVATE_IP_PREFIXES = [
   // IPV4
-  // in case we are in test or dev mode, we allow localhost resolution
   '127.',
   '0.',
   '10.',

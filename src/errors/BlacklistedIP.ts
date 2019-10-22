@@ -1,6 +1,8 @@
 import { CustomError } from './Custom';
 
-export class BlacklistedIPError<T extends Record<string, any>> extends CustomError {
+export class BlacklistedIPError<
+  T extends Record<string, any>
+> extends CustomError {
   url: string;
 
   restrictedIP: string;
@@ -12,7 +14,7 @@ export class BlacklistedIPError<T extends Record<string, any>> extends CustomErr
     this.url = url;
     this.restrictedIP = restrictedIP;
     if (context) {
-      Object.keys(context).forEach((key) => {
+      Object.keys(context).forEach(key => {
         this[key] = context[key];
       });
     }

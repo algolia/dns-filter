@@ -4,6 +4,6 @@
     "algolia",
     ":prHourlyLimitNone"
   ],
-  "reviewers": ["JonathanMontane"],
+  "reviewers": ["JonathanMontane","Jerska"],
   "semanticCommitType": "chore"
 }
