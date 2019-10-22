@@ -65,8 +65,12 @@ workflows:
   suite:
     jobs:
       - checkout
-      - test
-      - lint
+      - test:
+          requires:
+            - checkout
+      - lint:
+          requires:
+            - checkout
       - release:
           requires:
             - checkout
