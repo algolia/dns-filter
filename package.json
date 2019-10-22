@@ -2,7 +2,7 @@
   "name": "@algolia/dns-filter",
   "version": "0.0.1",
   "description": "A small utility library to test whether requests try to access predefined IPs",
-  "main": "dist/index.js",
+  "main": "index.js",
   "author": "Algolia <contact@algolia.com>",
   "license": "MIT",
   "bugs": {
@@ -23,6 +23,7 @@
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.4",
     "@semantic-release/git": "^7.0.16",
+    "@semantic-release/npm": "^5.2.0",
     "@types/jest": "^24.0.19",
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "^2.4.0",
