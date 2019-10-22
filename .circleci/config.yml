@@ -72,6 +72,6 @@ workflows:
             - checkout
             - test
             - lint
-         filters:
+          filters:
             branches:
               only: master
