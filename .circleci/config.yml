@@ -1,0 +1,77 @@
+---
+aliases:
+  # Forward the current folder when using wokflows
+  #   persist-to-workspace & attach-workspace
+  - &persist-work-dir
+    root: .
+    paths: .
+
+  - &attach-work-dir
+    at: ~/crawler/
+
+  # Dependencies
+  - &yarn
+    name: Run Yarn
+    command: |
+      yarn install --non-interactive --cache-folder ~/.cache/yarn
+
+defaults: &defaults
+  working_directory: ~/crawler'
+
+version: 2
+
+jobs:
+  checkout:
+    docker:
+      - image: circleci/node:10.16.3
+    steps:
+      - checkout
+
+      - run: *yarn
+
+      - persist-to-workspace: *persist-work-dir
+  
+  lint:
+    <<: *defaults
+    docker:
+      - image: circleci/node:10.16.3
+
+    steps:
+      - attach-workspace: *attach-work-dir
+
+      - run: yarn lint
+
+  test:
+    <<: *defaults
+    docker:
+      - image: circleci/node:10.16.3
+
+    steps:
+      - attach-workspace: *attach-work-dir
+
+      - run: yarn build && yarn test
+
+  release:
+    <<: *defaults
+    docker:
+      - image: circleci/node:10.16.3
+    branches:
+      only:
+        - master
+    steps:
+      - attach-workspace: *attach-work-dir
+
+      - run: yarn semantic-release
+
+workflows:
+  version: 2
+  suite:
+    jobs:
+      - checkout
+      - test
+      - lint
+      - release:
+          requires:
+            - checkout
+            - test
+            - lint
