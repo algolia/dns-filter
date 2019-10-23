@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/algolia/dns-filter/compare/v1.1.1...v1.1.2) (2019-10-23)
+
+
+### Bug Fixes
+
+* **circle-ci:** allow publish on npm ([678259b](https://github.com/algolia/dns-filter/commit/678259be62efaae29fcf115cba23c07740647c67))
+
 ## [1.1.1](https://github.com/algolia/dns-filter/compare/v1.1.0...v1.1.1) (2019-10-23)
 
 
