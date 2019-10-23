@@ -49,7 +49,7 @@ jobs:
     steps:
       - attach-workspace: *attach-work-dir
 
-      - run: yarn build && yarn test
+      - run: yarn test
 
   release:
     <<: *defaults
@@ -58,7 +58,7 @@ jobs:
     steps:
       - attach-workspace: *attach-work-dir
 
-      - run: yarn semantic-release
+      - run: yarn build && yarn semantic-release
 
 workflows:
   version: 2
