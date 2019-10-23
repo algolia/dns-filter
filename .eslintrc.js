@@ -4,7 +4,7 @@ module.exports = {
     es6: true,
   },
   extends: [
-    'algolia',
+    'algolia/jest',
   ],
   globals: {
     Atomics: 'readonly',
@@ -24,7 +24,5 @@ module.exports = {
         extensions: [".js", ".ts"]
       }
     }
-  },
-  rules: {
   },
 };

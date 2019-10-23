@@ -7,7 +7,7 @@ aliases:
     paths: .
 
   - &attach-work-dir
-    at: ~/crawler/
+    at: ~/project/
 
   # Dependencies
   - &yarn
@@ -16,7 +16,7 @@ aliases:
       yarn install --non-interactive --cache-folder ~/.cache/yarn
 
 defaults: &defaults
-  working_directory: ~/crawler'
+  working_directory: ~/project
 
 version: 2
 
@@ -55,9 +55,6 @@ jobs:
     <<: *defaults
     docker:
       - image: circleci/node:10.16.3
-    branches:
-      only:
-        - master
     steps:
       - attach-workspace: *attach-work-dir
 
@@ -68,10 +65,16 @@ workflows:
   suite:
     jobs:
       - checkout
-      - test
-      - lint
-      - release:
+      - test:
           requires:
             - checkout
+      - lint:
+          requires:
+            - checkout
+      - release:
+          requires:
             - test
             - lint
+          filters:
+            branches:
+              only: master
