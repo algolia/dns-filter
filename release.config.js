@@ -6,7 +6,11 @@ module.exports = {
       path: "@semantic-release/changelog",
       changelogFile: "CHANGELOG.md"
     },
-    "@semantic-release/npm",
+    [
+      "@semantic-release/npm", {
+        "pkgRoot": "dist",
+      }
+    ],
     {
       path: "@semantic-release/git",
       assets: ["package.json", "CHANGELOG.md"],
