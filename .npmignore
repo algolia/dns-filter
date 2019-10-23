@@ -1,0 +1,13 @@
+src/
+node_modules/
+.circle-ci/
+
+.eslintignore
+.eslintrc.js
+.gitignore
+
+jest.config.js
+release.config.js
+
+renovate.json
+tsconfig.json
