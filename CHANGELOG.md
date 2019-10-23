@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/algolia/dns-filter/compare/v1.1.2...v1.1.3) (2019-10-23)
+
+
+### Bug Fixes
+
+* **circle-ci:** force release ([3e48eb6](https://github.com/algolia/dns-filter/commit/3e48eb6dfec185704acacc47a4d52dec8c5c8f67))
+
 ## [1.1.2](https://github.com/algolia/dns-filter/compare/v1.1.1...v1.1.2) (2019-10-23)
 
 
