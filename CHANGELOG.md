@@ -1,3 +1,17 @@
+# [1.1.0](https://github.com/algolia/dns-filter/compare/v1.0.0...v1.1.0) (2019-10-23)
+
+
+### Bug Fixes
+
+* **ci-release:** copy package.json ([8c15b5d](https://github.com/algolia/dns-filter/commit/8c15b5d6d4a9c122eec41c6ff2479932444c7b76))
+* **ci-release:** move yarn build in release step ([#5](https://github.com/algolia/dns-filter/issues/5)) ([30dbf0f](https://github.com/algolia/dns-filter/commit/30dbf0f98867a0e67b7b590739e4eb7d435a5237))
+
+
+### Features
+
+* **trigger-release:** deploy latest release ([1128e02](https://github.com/algolia/dns-filter/commit/1128e023a430cc3f0e0af19a973e354377c375ff))
+* **trigger-release:** deploy latest release ([5c6ce74](https://github.com/algolia/dns-filter/commit/5c6ce74dd074bf1199dec726305dc1eda6c30abc))
+
 # 1.0.0 (2019-10-23)
 
 
