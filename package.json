@@ -23,6 +23,7 @@
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.4",
     "@semantic-release/git": "^7.0.16",
+    "@types/ip-address": "^5.8.2",
     "@types/jest": "^24.0.19",
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "^2.4.0",
@@ -40,5 +41,8 @@
     "semantic-release": "^15.13.27",
     "ts-jest": "^24.1.0",
     "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "ip-address": "^6.1.0"
   }
 }
