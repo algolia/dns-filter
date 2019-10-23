@@ -18,7 +18,8 @@
     "clean": "rm -rf dist/",
     "test": "jest",
     "lint": "eslint src/**/*",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "postpublish": "cp -r dist/package.json ."
   },
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.4",

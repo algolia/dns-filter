@@ -58,7 +58,7 @@ jobs:
     steps:
       - attach-workspace: *attach-work-dir
 
-      - run: yarn build && yarn semantic-release
+      - run: yarn build && cp package.json LICENSE README.md yarn.lock dist/ && yarn semantic-release
 
 workflows:
   version: 2
