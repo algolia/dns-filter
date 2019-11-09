@@ -25,7 +25,7 @@
     "@semantic-release/git": "7.0.18",
     "@semantic-release/npm": "5.3.4",
     "@types/ip-address": "5.8.2",
-    "@types/jest": "24.0.21",
+    "@types/jest": "24.0.22",
     "@types/node": "12.12.5",
     "@typescript-eslint/eslint-plugin": "2.6.0",
     "@typescript-eslint/parser": "2.6.0",
