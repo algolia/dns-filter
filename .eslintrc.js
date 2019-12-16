@@ -1,23 +1,19 @@
 module.exports = {
   env: {
     browser: true,
-    es6: true,
+    es6: true
   },
-  extends: [
-    'algolia/jest',
-  ],
+  extends: ["algolia/jest"],
   globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly"
   },
-  parser: '@typescript-eslint/parser',
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: 'module',
+    sourceType: "module"
   },
-  plugins: [
-    '@typescript-eslint', 'jest'
-  ],
+  plugins: ["@typescript-eslint", "jest"],
   settings: {
     "import/resolver": {
       node: {
@@ -25,4 +21,14 @@ module.exports = {
       }
     }
   },
+  rules: {
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "ts": "never",
+      }
+   ]
+  }
 };
