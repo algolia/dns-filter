@@ -1,5 +1,5 @@
 module.exports = {
-  branch: "master",
+  branches: "master",
   verifyConditions: ["@semantic-release/github"],
   prepare: [
     {
