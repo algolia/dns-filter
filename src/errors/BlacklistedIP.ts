@@ -14,7 +14,7 @@ export class BlacklistedIPError<
     this.url = url;
     this.restrictedIP = restrictedIP;
     if (context) {
-      Object.keys(context).forEach(key => {
+      Object.keys(context).forEach((key) => {
         this[key] = context[key];
       });
     }
