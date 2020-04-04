@@ -44,6 +44,6 @@
     "typescript": "3.8.3"
   },
   "dependencies": {
-    "ip-address": "6.2.0"
+    "ip-address": "6.3.0"
   }
 }
