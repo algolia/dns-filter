@@ -23,7 +23,7 @@ version: 2
 jobs:
   checkout:
     docker:
-      - image: circleci/node:10.20.0
+      - image: circleci/node:10.20.1
     steps:
       - checkout
 
@@ -34,7 +34,7 @@ jobs:
   lint:
     <<: *defaults
     docker:
-      - image: circleci/node:10.20.0
+      - image: circleci/node:10.20.1
 
     steps:
       - attach-workspace: *attach-work-dir
@@ -44,7 +44,7 @@ jobs:
   test:
     <<: *defaults
     docker:
-      - image: circleci/node:10.20.0
+      - image: circleci/node:10.20.1
 
     steps:
       - attach-workspace: *attach-work-dir
@@ -54,7 +54,7 @@ jobs:
   release:
     <<: *defaults
     docker:
-      - image: circleci/node:10.20.0
+      - image: circleci/node:10.20.1
     steps:
       - attach-workspace: *attach-work-dir
 
