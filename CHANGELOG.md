@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/algolia/dns-filter/compare/v1.1.6...v1.1.7) (2020-05-11)
+
+
+### Bug Fixes
+
+* **dep-sec:** upgrade npm dependency to secure version ([#16](https://github.com/algolia/dns-filter/issues/16)) ([e9de144](https://github.com/algolia/dns-filter/commit/e9de1445cc2ec89c682a64adcc991585abf96ef5))
+
 ## [1.1.6](https://github.com/algolia/dns-filter/compare/v1.1.5...v1.1.6) (2020-04-04)
 
 
