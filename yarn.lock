@@ -3751,10 +3751,10 @@ into-stream@^5.0.0:
     from2 "^2.3.0"
     p-is-promise "^3.0.0"
 
-ip-address@6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/ip-address/-/ip-address-6.3.0.tgz#8c031adff59b67fa1b2f0485cc5aed30bc709b69"
-  integrity sha512-tYN6DnF82jBRA6ZT3C+k4LBtVUKu0Taq7GZN4yldhz6nFKVh3EDg/zRIABsu4fAT2N0iFW9D482Aqkiah1NxTg==
+ip-address@6.4.0:
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/ip-address/-/ip-address-6.4.0.tgz#8f7d43e76002a1c3c230792c748f5d8c143f908a"
+  integrity sha512-c5uxc2WUTuRBVHT/6r4m7HIr/DfV0bF6DvLH3iZGSK8wp8iMwwZSgIq2do0asFf8q9ECug0SE+6+1ACMe4sorA==
   dependencies:
     jsbn "1.1.0"
     lodash.find "4.6.0"
