@@ -900,10 +900,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/ip-address@5.8.2":
-  version "5.8.2"
-  resolved "https://registry.yarnpkg.com/@types/ip-address/-/ip-address-5.8.2.tgz#5e413c477f78b3a264745eac937538a6e6e0c1f6"
-  integrity sha512-LFlDGRjJDnahfPyNCZGXvlaevSmZTi/zDxjTdXeTs8TQ9pQkNZKbCWaJXW29a3bGPRsASqeO+jGgZlaTUi9jTw==
+"@types/ip-address@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@types/ip-address/-/ip-address-6.0.0.tgz#cd80b2a4a9a97b96404c5f6dc4bcb85f07720f54"
+  integrity sha512-+UJ03Xf/kPz3GthtUeO7iSokzTvHqhuyh6DBstdB3MSaMEYHCiggwVIPtIiW6E3PeGjp8+Feb6IyfWSI5fyxmw==
   dependencies:
     "@types/jsbn" "*"
 
