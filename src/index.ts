@@ -87,10 +87,6 @@ export async function validateURL<T extends Record<string, any>>({
     const formattedIP =
       family === 4 ? new Address4(address) : new Address6(address);
 
-    if (!formattedIP.isValid()) {
-      throw new Error('Invalid address');
-    }
-
     ip = formattedIP.correctForm();
   } catch (err) {
     throw new DNSResolveError(err);
