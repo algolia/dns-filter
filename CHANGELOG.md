@@ -1,3 +1,5 @@
+## [1.1.11](https://github.com/algolia/dns-filter/compare/v1.1.10...v1.1.11) (2020-11-24)
+
 ## [1.1.10](https://github.com/algolia/dns-filter/compare/v1.1.9...v1.1.10) (2020-11-24)
 
 
