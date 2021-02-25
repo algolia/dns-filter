@@ -1,3 +1,10 @@
+## [1.1.11](https://github.com/algolia/dns-filter/compare/v1.1.10...v1.1.11) (2021-02-25)
+
+
+### Bug Fixes
+
+* clean yarn.lock ([0bed2ff](https://github.com/algolia/dns-filter/commit/0bed2ff43978a8b4b2f1bb3fc68fe3b08549e3f3))
+
 ## [1.1.11](https://github.com/algolia/dns-filter/compare/v1.1.10...v1.1.11) (2020-11-24)
 
 ## [1.1.10](https://github.com/algolia/dns-filter/compare/v1.1.9...v1.1.10) (2020-11-24)
