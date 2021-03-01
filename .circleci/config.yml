@@ -34,7 +34,7 @@ jobs:
   lint:
     <<: *defaults
     docker:
-      - image: cimg/node:14.15.4
+      - image: cimg/node:14.16.0
 
     steps:
       - attach-workspace: *attach-work-dir
@@ -44,7 +44,7 @@ jobs:
   test:
     <<: *defaults
     docker:
-      - image: cimg/node:14.15.4
+      - image: cimg/node:14.16.0
 
     steps:
       - attach-workspace: *attach-work-dir
@@ -54,7 +54,7 @@ jobs:
   release:
     <<: *defaults
     docker:
-      - image: cimg/node:14.15.4
+      - image: cimg/node:14.16.0
     steps:
       - attach-workspace: *attach-work-dir
 
