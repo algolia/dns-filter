@@ -1,3 +1,10 @@
+## [1.1.13](https://github.com/algolia/dns-filter/compare/v1.1.12...v1.1.13) (2021-03-01)
+
+
+### Bug Fixes
+
+* **deps:** update node.js to v14.16.0 ([#46](https://github.com/algolia/dns-filter/issues/46)) ([b0cc820](https://github.com/algolia/dns-filter/commit/b0cc820da0aa4c38591ef518bfcc30579f7572d9))
+
 ## [1.1.12](https://github.com/algolia/dns-filter/compare/v1.1.11...v1.1.12) (2021-02-25)
 
 
