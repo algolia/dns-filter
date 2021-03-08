@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es6: true
   },
-  extends: ["algolia/jest"],
+  extends: ["algolia", "algolia/jest"],
   globals: {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly"
