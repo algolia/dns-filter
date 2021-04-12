@@ -1,3 +1,10 @@
+## [1.1.14](https://github.com/algolia/dns-filter/compare/v1.1.13...v1.1.14) (2021-04-12)
+
+
+### Bug Fixes
+
+* up for version ([be9fcf3](https://github.com/algolia/dns-filter/commit/be9fcf39cf46c9f9afd5f43665ffd6688c6ffc4f))
+
 ## [1.1.13](https://github.com/algolia/dns-filter/compare/v1.1.12...v1.1.13) (2021-03-01)
 
 
