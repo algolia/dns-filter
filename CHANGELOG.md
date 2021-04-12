@@ -1,3 +1,10 @@
+## [1.1.16](https://github.com/algolia/dns-filter/compare/v1.1.15...v1.1.16) (2021-04-12)
+
+
+### Bug Fixes
+
+* unstrict node engine in package.json ([d8eaa84](https://github.com/algolia/dns-filter/commit/d8eaa84599b47fe26f022839c36de024744ac4b6))
+
 ## [1.1.15](https://github.com/algolia/dns-filter/compare/v1.1.14...v1.1.15) (2021-04-12)
 
 
