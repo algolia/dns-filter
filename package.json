@@ -46,7 +46,7 @@
     "typescript": "4.3.4"
   },
   "dependencies": {
-    "ip-address": "7.1.0"
+    "ip-address": "8.0.0"
   },
   "resolutions": {
     "npm": "7.19.0"
