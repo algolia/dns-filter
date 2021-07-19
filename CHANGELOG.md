@@ -1,3 +1,10 @@
+## [1.1.19](https://github.com/algolia/dns-filter/compare/v1.1.18...v1.1.19) (2021-07-19)
+
+
+### Bug Fixes
+
+* bump normalize-url from 6.0.0 to 6.0.1 ([#64](https://github.com/algolia/dns-filter/issues/64)) ([61959f7](https://github.com/algolia/dns-filter/commit/61959f7b774659f33c44884edc5307b946c99361))
+
 ## [1.1.18](https://github.com/algolia/dns-filter/compare/v1.1.17...v1.1.18) (2021-06-29)
 
 
