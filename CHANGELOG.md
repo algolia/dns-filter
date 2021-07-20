@@ -1,3 +1,10 @@
+## [1.1.20](https://github.com/algolia/dns-filter/compare/v1.1.19...v1.1.20) (2021-07-20)
+
+
+### Bug Fixes
+
+* adding contributing to readme ([8470d6d](https://github.com/algolia/dns-filter/commit/8470d6da88ed16996b6a10efe54ec0d325b2e1f2))
+
 ## [1.1.19](https://github.com/algolia/dns-filter/compare/v1.1.18...v1.1.19) (2021-07-19)
 
 
