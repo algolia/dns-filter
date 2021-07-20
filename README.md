@@ -28,3 +28,13 @@ catch (err) {
   throw new NetworkError(); // throw generic error
 }
 ```
+
+# Contributing
+
+To release this package, wait for `semantic-release` to finish, then:
+ - Make sure you're logged in with `npm login`
+ - Run: 
+```bash
+yarn build
+yarn publish
+```
