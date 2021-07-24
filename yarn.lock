@@ -3516,10 +3516,10 @@ ip-address@*:
     jsbn "1.1.0"
     sprintf-js "1.1.2"
 
-ip-address@8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/ip-address/-/ip-address-8.0.0.tgz#00ba9435c8027dd591c491ad64c3e6a52a767ee4"
-  integrity sha512-HAGaTPtx3AJj2p/ymbUjAJzF5bQ+pI6sDDEixHnj+vj1XL9DaK4hGvOOs3mdCMZZLIDOH8T8U6SInpqTk76wXw==
+ip-address@8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/ip-address/-/ip-address-8.1.0.tgz#1fe9b4509b51ff7d2fbbef4d3d26994d9915a459"
+  integrity sha512-Wz91gZKpNKoXtqvY8ScarKYwhXoK4r/b5QuT+uywe/azv0/nUCo7Bh0IRRI7F9DHR06kJNWtzMGLIbXavngbKA==
   dependencies:
     jsbn "1.1.0"
     sprintf-js "1.1.2"
