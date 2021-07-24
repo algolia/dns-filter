@@ -1,3 +1,10 @@
+## [1.1.21](https://github.com/algolia/dns-filter/compare/v1.1.20...v1.1.21) (2021-07-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ip-address to v8.1.0 ([02e9ec3](https://github.com/algolia/dns-filter/commit/02e9ec32b69ba98a633482deb8669846af7d5e5f))
+
 ## [1.1.20](https://github.com/algolia/dns-filter/compare/v1.1.19...v1.1.20) (2021-07-20)
 
 
