@@ -4,6 +4,19 @@
     "algolia",
     ":prHourlyLimitNone"
   ],
-  "reviewers": ["sbellone", "bodinsamuel"],
-  "semanticCommitType": "chore"
+  "reviewers": [],
+  "semanticCommitType": "chore",
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "circleci": {
+    "enabled": true
+  },
+  "node": {
+    "supportPolicy": [
+      "lts_active"
+    ]
+  },
+  "dependencyDashboard": true,
+  "timezone": "Europe/Paris"
 }
