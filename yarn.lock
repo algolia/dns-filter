@@ -4659,7 +4659,7 @@ npm-bundled@^1.1.1:
   dependencies:
     npm-normalize-package-bin "^1.0.1"
 
-npm-install-checks@^4.0.0:
+npm-install-checks@*, npm-install-checks@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/npm-install-checks/-/npm-install-checks-4.0.0.tgz#a37facc763a2fde0497ef2c6d0ac7c3fbe00d7b4"
   integrity sha512-09OmyDkNLYwqKPOnbI8exiOZU2GVVmQp7tgez2BPi5OZC8M82elDAps7sxC4l//uSUtotWqoEIDwjRvWH4qz8w==
@@ -4731,10 +4731,10 @@ npm-user-validate@*:
   resolved "https://registry.yarnpkg.com/npm-user-validate/-/npm-user-validate-1.0.1.tgz#31428fc5475fe8416023f178c0ab47935ad8c561"
   integrity sha512-uQwcd/tY+h1jnEaze6cdX/LrhWhoBxfSknxentoqmIuStxUExxjWd3ULMLFPiFUrZKbOVMowH6Jq2FRWfmhcEw==
 
-npm@7.22.0, npm@^7.0.0:
-  version "7.22.0"
-  resolved "https://registry.yarnpkg.com/npm/-/npm-7.22.0.tgz#11db1860c68c569eb2e3f4d4e97934b005b585bc"
-  integrity sha512-HJnjTCrGGnacPMCSnrxuHGf2H4VdrY7hwTAK1RwByg0K96KIuTR4QNioFW+bnc/pW0uwpk9lLsDf4BeEQhTv2Q==
+npm@7.23.0, npm@^7.0.0:
+  version "7.23.0"
+  resolved "https://registry.yarnpkg.com/npm/-/npm-7.23.0.tgz#aeafaafe847fdd7c496d8e4d4bcbb5201aa1930c"
+  integrity sha512-m7WFTwGfiBX+jL4ObX7rIDkug/hG/Jn8vZUjKw4WS8CqMjVydHiWTARLDIll7LtHu5i7ZHBnqXZbL2S73U5p6A==
   dependencies:
     "@npmcli/arborist" "*"
     "@npmcli/ci-detect" "*"
@@ -4780,6 +4780,7 @@ npm@7.22.0, npm@^7.0.0:
     node-gyp "*"
     nopt "*"
     npm-audit-report "*"
+    npm-install-checks "*"
     npm-package-arg "*"
     npm-pick-manifest "*"
     npm-profile "*"
