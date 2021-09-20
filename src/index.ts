@@ -1,7 +1,9 @@
 import { lookup } from 'dns';
 import { URL } from 'url';
 import { promisify } from 'util';
+
 import { Address6, Address4 } from 'ip-address';
+
 import {
   BlacklistedIPError,
   DNSResolveError,
@@ -89,7 +91,7 @@ export async function validateURL<T extends Record<string, any>>({
 
     ip = formattedIP.correctForm();
   } catch (err) {
-    throw new DNSResolveError(err);
+    throw new DNSResolveError(err as Error);
   }
 
   if (isRestrictedIP(ip, ipPrefixes)) {
