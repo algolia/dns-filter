@@ -27,7 +27,7 @@
     "@types/ip-address": "7.0.0",
     "@types/jest": "27.0.2",
     "@types/jsbn": "1.2.29",
-    "@types/node": "16.11.6",
+    "@types/node": "16.11.7",
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
     "babel-eslint": "10.1.0",
