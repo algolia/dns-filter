@@ -23,7 +23,7 @@
   "devDependencies": {
     "@semantic-release/changelog": "6.0.1",
     "@semantic-release/git": "10.0.1",
-    "@semantic-release/npm": "8.0.3",
+    "@semantic-release/npm": "9.0.0",
     "@types/ip-address": "7.0.0",
     "@types/jest": "27.4.0",
     "@types/jsbn": "1.2.30",

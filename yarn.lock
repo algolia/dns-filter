@@ -873,26 +873,7 @@
     p-retry "^4.0.0"
     url-join "^4.0.0"
 
-"@semantic-release/npm@8.0.3":
-  version "8.0.3"
-  resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-8.0.3.tgz#69378ce529bbd263aa8fc899b2d0f874114e0302"
-  integrity sha512-Qbg7x/O1t3sJqsv2+U0AL4Utgi/ymlCiUdt67Ftz9HL9N8aDML4t2tE0T9MBaYdqwD976hz57DqHHXKVppUBoA==
-  dependencies:
-    "@semantic-release/error" "^3.0.0"
-    aggregate-error "^3.0.0"
-    execa "^5.0.0"
-    fs-extra "^10.0.0"
-    lodash "^4.17.15"
-    nerf-dart "^1.0.0"
-    normalize-url "^6.0.0"
-    npm "^7.0.0"
-    rc "^1.2.8"
-    read-pkg "^5.0.0"
-    registry-auth-token "^4.0.0"
-    semver "^7.1.2"
-    tempy "^1.0.0"
-
-"@semantic-release/npm@^9.0.0":
+"@semantic-release/npm@9.0.0", "@semantic-release/npm@^9.0.0":
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-9.0.0.tgz#b4868bb35cc64c3a040791661311398dd1fcadc0"
   integrity sha512-hj2jqayS2SPUmFtCMCOQMX975uMDfRoymj1HvMSwYdaoI6hVZvhrTFPBgJeM85O0C+G3IFviAUar5gel/1VGDQ==
@@ -4728,7 +4709,7 @@ npm-user-validate@*:
   resolved "https://registry.yarnpkg.com/npm-user-validate/-/npm-user-validate-1.0.1.tgz#31428fc5475fe8416023f178c0ab47935ad8c561"
   integrity sha512-uQwcd/tY+h1jnEaze6cdX/LrhWhoBxfSknxentoqmIuStxUExxjWd3ULMLFPiFUrZKbOVMowH6Jq2FRWfmhcEw==
 
-npm@8.3.2, npm@^7.0.0, npm@^8.3.0:
+npm@8.3.2, npm@^8.3.0:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/npm/-/npm-8.3.2.tgz#50149817779f10429959919dc7f5f85a2c85db69"
   integrity sha512-xZAC9GpWNOyiS1TtBqBy0HJpjIVI8zsVXEOEwcmgqYFtqOy7sXUL0ByOrkhfcGmf+akSXz3uOxLYB8aLlYivQQ==
