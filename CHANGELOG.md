@@ -1,3 +1,10 @@
+## [1.1.25](https://github.com/algolia/dns-filter/compare/v1.1.24...v1.1.25) (2022-01-25)
+
+
+### Bug Fixes
+
+* upgrade dependencies ([ebe18f1](https://github.com/algolia/dns-filter/commit/ebe18f1f447e4e4e242699f115a7b3f5928343ac))
+
 ## [1.1.24](https://github.com/algolia/dns-filter/compare/v1.1.23...v1.1.24) (2021-11-02)
 
 
