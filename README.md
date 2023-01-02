@@ -38,3 +38,4 @@ To release this package, wait for `semantic-release` to finish, then:
 yarn build
 yarn publish
 ```
+test
