@@ -23,7 +23,7 @@ version: 2
 jobs:
   checkout:
     docker:
-      - image: cimg/node:14.21.1
+      - image: cimg/node:18.12.1
     steps:
       - checkout
 
@@ -34,7 +34,7 @@ jobs:
   lint:
     <<: *defaults
     docker:
-      - image: cimg/node:14.21.1
+      - image: cimg/node:18.12.1
 
     steps:
       - attach-workspace: *attach-work-dir
@@ -44,7 +44,7 @@ jobs:
   test:
     <<: *defaults
     docker:
-      - image: cimg/node:14.21.1
+      - image: cimg/node:18.12.1
 
     steps:
       - attach-workspace: *attach-work-dir
@@ -54,7 +54,7 @@ jobs:
   release:
     <<: *defaults
     docker:
-      - image: cimg/node:14.21.1
+      - image: cimg/node:18.12.1
     steps:
       - attach-workspace: *attach-work-dir
 
