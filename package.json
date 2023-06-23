@@ -49,7 +49,7 @@
     "ip-address": "8.1.0"
   },
   "resolutions": {
-    "npm": "8.11.0"
+    "npm": "8.19.4"
   },
   "engines": {
     "node": ">=14"
